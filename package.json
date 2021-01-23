@@ -1,0 +1,31 @@
+{
+    "name": "ms_hacker-news_grus_tep_hyderabad_full-time_2020_2",
+    "version": "1.0.0",
+    "description": "hackernews rest api",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/exponentsoftware/MS_Hacker-news_Grus_Tep_Hyderabad_Full-time_2020_2.git"
+    },
+    "author": "bhupendra",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/exponentsoftware/MS_Hacker-news_Grus_Tep_Hyderabad_Full-time_2020_2/issues"
+    },
+    "homepage": "https://github.com/exponentsoftware/MS_Hacker-news_Grus_Tep_Hyderabad_Full-time_2020_2#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "joi": "^17.3.0",
+        "mongoose": "^5.11.13"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
