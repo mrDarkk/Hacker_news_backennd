@@ -13,7 +13,7 @@ var newsSchema = new mongoose.Schema({
         type: String,
         required: "You have to give an url"
     },
-    email: {
+    UserId: {
         type: String
 
     },

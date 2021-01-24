@@ -9,15 +9,15 @@ router.post("/register", user.register);
 router.post("/login", user.login);
 
 // login route
-router.post('/addNews', news.create);
+// router.post('/addNews', news.create);
 
 router.get('/getNews', news.findAll);
 
 router.get('/news/:Id', news.findOne);
 
-router.put('/news/:Id', news.update);
+// router.put('/news/:Id', news.update);
 
-router.delete('/news/:Id', news.delete);
+// router.delete('/news/:Id', news.delete);
 
 
 // app.get('/getAlluser', user.findAll);

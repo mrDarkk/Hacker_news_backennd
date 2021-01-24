@@ -31,7 +31,7 @@ app.use("/api/user", authRoutes);
 
 
 // this route is protected with token
-app.use("/api/dashboard", verifyToken, dashboardRoutes);
+app.use("/api/admin", verifyToken, dashboardRoutes);
 
 
 
