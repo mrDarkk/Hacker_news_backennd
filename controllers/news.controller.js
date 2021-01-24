@@ -7,7 +7,7 @@ exports.create = (req, res) => {
         heading: req.body.heading,
         content: req.body.content,
         URL: req.body.URL,
-        email: req.body.email
+        UserId: req.user.id
     });
 
     // Save news in database
