@@ -21,15 +21,16 @@ app.use(bodyParser.json())
 app.use(express.json()); // for body parser
 
 
-//Routes
+// home page Routes
 app.get('/', (req, res) => {
     res.send('We are on HomePage')
 });
 
+// public route anyone can access 
 // route middlewares
 app.use("/api/user", authRoutes);
 
-
+// admin route only logged in user can access
 // this route is protected with token
 app.use("/api/admin", verifyToken, dashboardRoutes);
 

@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const news = require('../controllers/news.controller.js');
 
-// dashboard route
+// admin route
 router.get("/", (req, res) => {
     res.json({
         error: null,
@@ -12,17 +12,6 @@ router.get("/", (req, res) => {
         },
     });
 });
-
-// router.get("/", (req, res) => {
-//     res.json({
-//         error: null,
-//         data: {
-//             title: "My dashboard",
-//             content: "dashboard content",
-//             user: req.user,
-//         },
-//     });
-// });
 
 router.post('/addNews', news.create);
 

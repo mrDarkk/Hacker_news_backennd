@@ -7,40 +7,6 @@ const User = require('../model/user.model.js');
 const { registerValidation, loginValidation } = require("../validation.js");
 
 
-
-// Create and Save a new Note
-// exports.create = (req, res) => {
-
-//     // Create a Note
-//     const user = new User({
-//         name: req.body.name,
-//         email: req.body.email
-//     });
-
-//     // Save Note in the database
-//     user.save()
-//         .then(data => {
-//             res.send(user);
-//         }).catch(err => {
-//             res.status(500).send({
-//                 message: err.message || "Some error occurred while creating the Note."
-//             });
-//         });
-// };
-
-
-// exports.findAll = (req, res) => {
-//     User.find()
-//         .then(user => {
-//             res.send(user);
-//         }).catch(err => {
-//             res.status(500).send({
-//                 message: err.message || "Some error occurred while retrieving notes."
-//             });
-//         });
-// };
-
-
 exports.register = async(req, res) => {
     // validate the user
     const { error } = registerValidation(req.body);
