@@ -1,5 +1,12 @@
 const router = require("express").Router();
 const news = require('../controllers/news.controller.js');
+const user = require('../controllers/user.controller.js');
+
+// register route
+router.post("/register", user.register);
+
+// login route
+router.post("/login", user.login);
 
 // login route
 router.post('/addNews', news.create);
