@@ -5,6 +5,7 @@ const connectDB = require("./config/database");
 const bodyParser = require('body-parser');
 // require('dotenv/config');
 const dotenv = require("dotenv");
+const verifyToken = require("./routes/validate-token");
 const authRoutes = require("./routes/routes.js");
 const dashboardRoutes = require("./routes/dashboard.js");
 
@@ -27,6 +28,11 @@ app.get('/', (req, res) => {
 
 // route middlewares
 app.use("/api/user", authRoutes);
+
+
+// this route is protected with token
+app.use("/api/dashboard", verifyToken, dashboardRoutes);
+
 
 
 app.listen(process.env.PORT || 5000, () => {
