@@ -1,4 +1,4 @@
-# Milestone-6: Hackers read news too you know
+# Hackers read news too you know
 
 ## Problem Statement:
 
